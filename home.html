@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <style>
+    body {
+      font-family: Poppins, sans-serif;
+      margin: 0;
+    
+    }
+    nav {
+      background: #163853;
+      padding: 10px;
+      text-align: right;
+      justify-content: space-between;
+      align-items: center;
+      display: flex;
+    }
+    nav a { 
+      color: white;
+      margin-right: 20px;
+      margin-left: 20px;
+      transition: 0.5s;
+      text-decoration: none;
+      font-size: large;
+      padding: 10px 12px;
+      display: flex;
+    }
+    .name{
+      font-family: 'Great Vibes';
+      color: #d9dfdb;
+      font-size: 32px;
+      margin-right: 50px;
+    }
+    nav a:hover {
+      background: #8a7d63;
+      transition: 0.5s;
+      border-radius: 10px;
+      border-color: cadetblue;
+      border-width: 1px;
+      border-style: solid;
+    }
+    .prof {
+      height: 200px; 
+      width: 200px; 
+      border-radius: 110px; 
+      margin-left: -500px;
+      border-color: maroon;
+      border-width: 3px;
+      border-style: solid;
+      transition: 1s;
+    }
+    .prof:hover{
+      height: 215px; 
+      width: 215px; 
+      border-radius: 115px; 
+      border-width: 5px;
+      border-style: solid;
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+      transition: 1.2s;
+      
+    }
+    .line{
+      border: none;
+      height: 0.5px;
+      width: 1000px;
+      background-color: #3333338c;
+      margin-top: 100px;
+      text-align: center;
+    }
+    section {
+      padding: 50px;
+      text-align: center;
+      border-bottom: 1px solid #ccc;
+    }
+    #home { 
+      background: #e6e6e6;
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.753);
+      border: none;
+    }
+    #aboutme{
+      border: none;
+    }
+    #section2 {
+      border: none;
+      background-color: aliceblue;
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.753);
+    }
+     
+    #contact{
+      border: 3px solid #163853;
+      background-color: #f2f2f2;
+      display: inline-block; 
+      padding: 25px;
+      width: 850px;
+      border-radius: 50px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+      transition: 0.3s;
+    }
+    
+      #contact:hover{
+      border: 3px solid rgb(55, 124, 220);
+      box-shadow: 0 8px 20px rgb(55, 124, 220);
+      transition: 0.3s;
+    }
+    
+  .University{
+    border: 3px solid #163853;
+    background-color: #f2f2f2;
+    display: inline-block; 
+    padding: 20px;
+    width: 850px;
+    border-radius: 50px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+    transition: 0.3s;
+  }
+
+  .University:hover{
+    border: 3.5px solid rgb(55, 124, 220);
+    box-shadow: 0 8px 30px rgb(55, 124, 220);
+    transition: 0.3s;
+  }
+
+  .Language{
+    margin-top: 50px;
+    margin-left: 5px;
+    border: 3px solid #163853;
+    background-color: #f2f2f2;
+    display: flexbox; 
+    text-align: left;
+    padding: 20px;
+    width: 350px;
+    border-radius: 50px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    transition: 0.3s;
+  }
+
+  .Language:hover{
+    border: 3px solid rgb(55, 124, 220);
+    box-shadow: 0 8px 20px rgb(55, 124, 220);
+    transition: 0.3s;
+  }
+
+  .back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #333;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+.Courses{
+  margin-top: 50px;
+  margin-left: 65px;
+  border: 3px solid #163853;
+  background-color: #f2f2f2;
+  display: flexbox; 
+  text-align: left;
+  padding: 20px;
+  width: 350px;
+  border-radius: 50px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  transition: 0.3s;
+}
+.Courses:hover{
+  border: 3px solid rgb(55, 124, 220);
+  box-shadow: 0 8px 20px rgb(55, 124, 220);
+  transition: 0.3s;
+}
+li{
+  margin-left: 15px;
+  margin-top: 25px;
+}
+li a{
+  margin-left: 15px;
+}
+.two-columns{
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  border: none;
+}
+.two-columns article{
+  flex: 1;
+}
+  .soft-skills, .tech-skills{
+    margin-top: 20px;
+    margin-left: 5px;
+    border: 3px solid #163853;
+    background-color: rgb(244, 246, 249);
+    display: flexbox; 
+    text-align: left;
+    width: 300px;
+    border-radius: 50px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    transition: 0.3s;
+  }
+  .soft-skills:hover, .tech-skills:hover{
+    border: 3px solid rgb(55, 124, 220);
+    box-shadow: 0 8px 20px rgb(55, 124, 220);
+    transition: 0.3s;
+  }
+  .soft-skills li{
+    margin-top: 10px;
+    margin-left: 45px;
+  }
+  .tech-skills li{
+    margin-top: 20px;
+    margin-left: 45px;
+  }
+  .tech-skills li img{
+    width: 5%;
+    height: 50%;
+    margin-bottom: -5px;
+    margin-right: 5px;
+  }
+ 
+.rating {
+  font-size: 25px;
+  color: gold;
+}
+
+
+
+  </style>
+</head>
+<body>
+<h1 style="text-align: center;">Portfolio</h1>
+  <nav>
+    <span class="name">Noor Fatima</span>
+    <a href="home.html#aboutme">About Me</a>
+    <a href="home.html#skills">Skills</a>
+    <a href="projects.html">Projects</a>
+    <a href="projects.html#experiences">Experiences</a>
+    <a href="home.html#contact">Contact</a>
+    <a href="projects.html#feedback">Feedback</a>
+
+  </nav>
+
+  <section id="home">
+
+     <img class="prof" src="Photos/prof.jpg" > </img>
+     <h1 style="margin-top: -170px;">Noor Fatima</h1>
+     <p style="width: 500px; margin-left: 485px; text-align: justify;">A highly motivated and detail-oriented BS student in 
+      Computer Science with a strong passion for web development. 
+      Proficient in C /C++ and MS Office tools. 
+      Proven ability to learn and adapt quickly, with a strong desire 
+      to contribute to a dynamic team.</p>
+    
+    <hr class="line">
+    <section id="aboutme">
+      <h1>About Me</h1>
+      <article class="University" style="text-align: left;">
+       <h2 style="margin-left: 10px;">Education</h2>
+       <h3 style="margin-top: 25px; margin-left: 10px;">1. Bachelors of Computer Science </h3>
+       <h5 style="margin-top: -10px; margin-left: 30px;">(2025 onwards...)</h5>
+       <p style="margin-top: -15px; margin-left: 30px;">Kinnaird College for Women University</p>
+       <h3 style="margin-top: 25px; margin-left: 10px;">2. Intermediate (ICS-Statistics) </h3>
+       <h5 style="margin-top: -10px; margin-left: 30px;">(2023 -- 25)</h5>
+       <p style="margin-top: -10px; margin-left: 30px;">Unique College for Girls</p>
+       <h3 style="margin-top: 25px; margin-left: 10px;">3. Matric (Biology) </h3>
+       <h5 style="margin-top: -10px; margin-left: 30px;">(2021 -- 23)</h5>
+       <p style="margin-top: -10px; margin-left: 30px;">Unique High School for Girls</p>
+      </article>
+      <br>
+      
+      <section class="two-columns">
+      <article class="Language">
+       <h2 style="margin-left: 20px;">Languages</h2>
+       <h3 style="margin-left: 20px;">1. English <span style="margin-left: 100px;" class="rating">★★★★☆</span></h3>
+       <h3 style="margin-left: 20px;">2. Urdu <span style="margin-left: 118px;" class="rating">★★★★☆</span></h3>
+       <h3 style="margin-left: 20px;">3. Punjabi <span style="margin-left: 92px;" class="rating">★★★☆☆</span></h3>
+      </article>
+
+      <article class="Courses">
+        <h2>Courses & Certificates</h2>
+      <li><a target="_blank" href="hp.certificate1.pdf">Ai For Beginners</a></li>
+      <li><a target="_blank" href="hp.certificate2.pdf">Resume Writing and Job Interviewing</a></li>
+      <li><a target="_blank" href="hp.certificate3.pdf">Selling Online</a></li>
+      <li><a target="_blank" href="canva.certificate.pdf">Canva Essentials</a></li>
+      </article>
+     </section>
+    </section>
+  </section>
+
+  <section id="skills">
+    <h1>Skills</h1>
+    <section class="two-columns">
+      <article class="soft-skills">
+        <h2 style="margin-left: 30px;">Soft skills</h2>
+        <li>Confidence <span style="margin-left: 110px;" class="rating">★★★★☆</span></li>
+        <li>Cooperation <span style="margin-left: 103px;" class="rating">★★★★★</span></li>
+        <li>Critical Thinking <span style="margin-left: 75px;" class="rating">★★★★☆</span></li>
+        <li>Efficience <span style="margin-left: 127px;" class="rating">★★★★☆</span></li>
+        <li>Honesty <span style="margin-left: 140px;" class="rating">★★★★★</span></li>
+        <li>Loyalty <span style="margin-left: 150px;" class="rating">★★★★★</span></li>
+        <li>Leadership <span style="margin-left: 120px;" class="rating">★★★★☆</span></li>
+        <li>Punctuality <span style="margin-left: 120px;" class="rating">★★★★☆</span></li>
+        <li>Problem Solving <span style="margin-left: 80px;" class="rating">★★★★★</span></li>
+        <li>Public Speaking <span style="margin-left: 80px;" class="rating">★★★★☆</span></li>
+        <li>Teamwork <span style="margin-left: 120px;" class="rating">★★★★★</span></li>
+        <li style="margin-bottom: 20px;">Time Management <span style="margin-left: 50px;" class="rating">★★★★★</span></li>
+      </article>
+
+      <article class="tech-skills">
+      <h2 style="margin-left: 30px;">Tech skills</h2>
+        <li><img src="Photos/html.png">HTML <span style="margin-left: 110px;" class="rating">★★★★☆</span></li>
+        <li><img src="Photos/css.png">CSS <span style="margin-left: 120px;" class="rating">★★★★☆</span></li>
+        <li><img src="Photos/c.png">C <span style="margin-left: 140px;" class="rating">★★★★☆</span></li>
+        <li><img src="Photos/c++.png">C++ <span style="margin-left: 120px;" class="rating">★★★☆☆</span></li>
+        <li><img src="Photos/word.png">MS Word <span style="margin-left: 86px;" class="rating">★★★★★</span></li>
+        <li><img src="Photos/excel.png">MS Excel <span style="margin-left: 89px;" class="rating">★★★★☆</span></li>
+        <li><img src="Photos/ppt.png">MS Powerpoint <span style="margin-left: 38px;" class="rating">★★★★★</span></li>
+        <li><img src="Photos/sql.png">SQL <span style="margin-left: 125px;" class="rating">★★★☆☆</span></li>
+      </article>
+      
+      
+    </section>
+  </section>
+
+
+  <section id="section2">
+      <h1 style=" margin-top: 75px;">Contact Info</h1>
+    
+      <section id="contact">
+       <img style="width: 30px; height: 30px;" src="Photos/phone.png" alt="my whatsapp">
+        <a style="margin-left: 10px;" target="_blank" href="tel:+923194250330">0319-425-0330</a>
+       <img style="width: 30px; height: 30px; margin-left: 280px;" src="Photos/email.png" alt="my email">
+        <a style="margin-left: 10px;" target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&to=noorfatimaikhlas@gmail.com">
+          noorfatimaikhlas@gmail.com</a><br><br>
+       <img style="width: 30px; height: 30px; margin-left: -29px;" src="Photos/instagram.png" alt="my insta">
+        <a style="margin-left: 10px;" target="_blank" href="https://www.instagram.com/noorfatimaikhlas711/">
+          noorfatimaikhlas@gmail.com</a>
+       <img style="width: 30px; height: 30px; margin-left: 182px;" src="Photos/location.png" alt="location">
+        <a style="margin-left: 10px;" target="_blank" href="https://maps.app.goo.gl/D4jNWwgV53TphDkk8">
+          93, Jail Rd, G.O.R. I, Lhr.</a>
+      </section>
+
+      
+
+
+      <a href="#top" class="back-to-top">⬆ Back to Top</a>
+      <header id="#top"></header>
+  
+
+  
+    
+
+  </section>
+
+</body>
+</html>
